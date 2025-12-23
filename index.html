@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Julian - Web Development Learning</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-	<h1>Hi, ich bin Julian</h1>
-	<p>Ich lerne Webentwicklung und Cybersecurity</p>
 
-	<h2>Ziele</h2>
-	<ul>
-		<li>Full-Stack Web Development</li>
-		<li>Cybersecurity Grundlagen</li>
-		<li>Portfolio mit Projekten</li>
-	</ul>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<h1>Hi, ich bin Julian</h1>
+			<p class="subtitle">Full-Stack & Cybersicurity Learner</p>
+
+			<nav>
+				<a href="#projects">Projekte</a>
+				<a href="#skills">Skills</a>
+				<a href="#contact">Kontakt</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="card" id="projects">
+			<h2>Projekte</h2>
+			<ul class="list">
+				<li><strong>Projekt 1:</strong> Portfolio Webseite (in Arbeit)</li>
+				<li><strong>Projekt 2:</strong> JavaScript App (kommt)</li>
+				<li><strong>Projekt 3:</strong> Full-Stack App (kommt)</li>
+				<li><strong>Projekt 4:</strong> Security Audit (kommt)</li>
+			</ul>
+		</section>
+		
+		<section class="card" id="skills">
+			<h2>Skills (Start)</h2>
+			<div class="badges">
+				<span class="badge">HTML</span>
+				<span class="badge">CSS</span>
+				<span class="badge">Git</span>
+				<span class="badge">GitHub</span>
+			</div>
+		</section>
+
+		<section class="cart" id="contact">
+			<h2>Kontakt</h2>
+			<p>GitHub: <a href="https://github.com/julian-devs" target="_blank" rel="noreferrer">julian-devs</a></p>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<small>© <span id="year"></span> Julian • Build while learning</small>
+		</div>
+	</footer>
+	<script>
+		document.getElementById("year").textContent = new Date().getFullYear;
+	</script>
 </body>
 </html>
